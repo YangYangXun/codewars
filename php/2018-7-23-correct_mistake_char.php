@@ -1,13 +1,15 @@
 <?php
 
-// ("LONDON", correct("L0ND0N"));
-// ("DUBLIN", correct("DUBL1N"));
-// ("SINGAPORE", correct("51NGAP0RE"));
-// ("BUDAPEST", correct("BUDAPE5T"));
-// ("PARIS", correct("PAR15"));
+/* 
+ * 
+ *  Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
+ *  S is misinterpreted as 5
+ *  O is misinterpreted as 0
+ *  I is misinterpreted as 1
+ * 
+ */
 
 
-//  return str_replace(["5", "0", "1"], ["S", "O", "I"], $string);
 
 /* 
  * 
@@ -22,17 +24,12 @@
  */
 
 
-
-
 function correct($string)
 {
     // todo
     // compare 比對 符合條件 取代
     return str_replace(array("0","1","5"),array("O","I","S"),$string,$count);
-
-    
 }
 
 echo $count ;
-
 echo correct("L0ND0N");
