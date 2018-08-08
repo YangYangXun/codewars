@@ -20,7 +20,7 @@ function numbersWithDigitInside($x, $d)
         $i = (string) $i;
         $d = (string) $d;
         // echo strpos($i, $d);
-        if (strpos($i, $d) !== false) {
+        if (strstr($i, $d) !== false) {
             echo "match";
             array_push($arr, $i);
         }
